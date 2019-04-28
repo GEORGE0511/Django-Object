@@ -1,0 +1,125 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/grid-list@^0.27.0",
+        "scope": "@material",
+        "escapedName": "@material%2fgrid-list",
+        "name": "@material/grid-list",
+        "rawSpec": "^0.27.0",
+        "spec": ">=0.27.0 <0.28.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/grid-list@>=0.27.0 <0.28.0",
+  "_id": "@material/grid-list@0.27.0",
+  "_inCache": true,
+  "_location": "/@material/grid-list",
+  "_nodeVersion": "8.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/grid-list-0.27.0.tgz_1513020933964_0.45875369291752577"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/grid-list@^0.27.0",
+    "scope": "@material",
+    "escapedName": "@material%2fgrid-list",
+    "name": "@material/grid-list",
+    "rawSpec": "^0.27.0",
+    "spec": ">=0.27.0 <0.28.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/grid-list/-/grid-list-0.27.0.tgz",
+  "_shasum": "d0ead89555a9a7aff4d3fc7cff60a221ab577483",
+  "_shrinkwrap": null,
+  "_spec": "@material/grid-list@^0.27.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/base": "^0.24.0",
+    "@material/rtl": "^0.1.8",
+    "@material/theme": "^0.27.0",
+    "@material/typography": "^0.3.0"
+  },
+  "description": "The Material Components for the web grid list component",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-hEKGoDGu/7eIjitDZrA7oQGdrBXIPLZCR6rKgW/dRIVtjKKI8ZjMN5RkzZ2gmHyZyxAL7iTRq6KTtLfdnpWprg==",
+    "shasum": "d0ead89555a9a7aff4d3fc7cff60a221ab577483",
+    "tarball": "https://registry.npmjs.org/@material/grid-list/-/grid-list-0.27.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "keywords": [
+    "material components",
+    "material design",
+    "grid list"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "moog16",
+      "email": "mattgoo@gmail.com"
+    },
+    {
+      "name": "bonniez",
+      "email": "bonniez@google.com"
+    },
+    {
+      "name": "patrickrodee",
+      "email": "prodee@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    },
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    }
+  ],
+  "name": "@material/grid-list",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.27.0"
+}

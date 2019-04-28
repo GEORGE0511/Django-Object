@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="/static/css/example.css">
+  <script src="/static/lib/sweet-alert.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/lib/sweet-alert.css">
+  <title>用户用水管理系统登陆界面</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="/static/node_modules/mdi/css/materialdesignicons.min.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="/static/images/favicon.png" />
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <div class="page-wrapper">
+      <main class="content-wrapper auth-screen">
+        <div class="mdc-layout-grid">
+					<div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+						</div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+							<div class="mdc-card">
+								<section class="mdc-card__primary bg-white">
+
+                  <form action="/login/" method="post">
+                    <div class="mdc-layout-grid">
+            					<div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                          <label class="mdc-text-field w-100">
+                          <input type="text" name="name" class="mdc-text-field__input" value="账户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '账户名';}">
+                            <span class="mdc-text-field__label"></span>
+                            <div class="mdc-text-field__bottom-line"></div>
+                          </label>
+            						</div>
+                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                          <label class="mdc-text-field w-100">
+                          <input type="password" name="password" class="mdc-text-field__input" value="密码            " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '密码            ';}">
+                            <span class="mdc-text-field__label"></span>
+                              <span style="color:red;">{{ error_msg }}</span>
+                            <div class="mdc-text-field__bottom-line"></div>
+                          </label>
+            						</div>
+                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                          <div class="mdc-form-field">
+                            <div class="mdc-checkbox">
+                              <input type="checkbox" id="my-checkbox" class="mdc-checkbox__native-control"/>
+                              <div class="mdc-checkbox__background">
+                                <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                  <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                </svg>
+                                <div class="mdc-checkbox__mixedmark"></div>
+                              </div>
+                            </div>
+                            <label for="my-checkbox">记住我</label>
+                          </div>
+                        </div>
+                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center justify-content-end">
+                          <a href="{% url 'xiugai' %}">忘记密码   </a>
+                        </div>
+                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12 d-flex align-item-center justify-content-end">
+                          <a href={% url 'register' %}>注册帐号</a>
+                         </div>
+                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12 d-flex align-item-center justify-content-end">
+                          <a href={% url 'employerregister' %}>成为送水员工</a>
+                         </div>
+                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                               <button id ='george' class="mdc-button mdc-button--raised w-100" onclick="a" data-mdc-auto-init="MDCRipple">
+                                  登录
+                               </button>
+                        </div>
+                                </div>
+            				</div>
+                  </form>
+								</section>
+							</div>
+						</div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+						</div>
+					</div>
+				</div>
+      </main>
+    </div>
+  </div>
+  <!-- body wrapper -->
+  <!-- plugins:js -->
+  <script src="/static/node_modules/material-components-web/dist/material-components-web.min.js"></script>
+  <script src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+	<script src="/static/js/misc.js"></script>
+	<script src="/static/js/material.js"></script>
+	<!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>

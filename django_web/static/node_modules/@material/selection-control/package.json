@@ -1,0 +1,121 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/selection-control@^0.27.0",
+        "scope": "@material",
+        "escapedName": "@material%2fselection-control",
+        "name": "@material/selection-control",
+        "rawSpec": "^0.27.0",
+        "spec": ">=0.27.0 <0.28.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/selection-control@>=0.27.0 <0.28.0",
+  "_id": "@material/selection-control@0.27.0",
+  "_inCache": true,
+  "_location": "/@material/selection-control",
+  "_nodeVersion": "8.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/selection-control-0.27.0.tgz_1513020940119_0.008380516665056348"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/selection-control@^0.27.0",
+    "scope": "@material",
+    "escapedName": "@material%2fselection-control",
+    "name": "@material/selection-control",
+    "rawSpec": "^0.27.0",
+    "spec": ">=0.27.0 <0.28.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@material/checkbox",
+    "/@material/form-field",
+    "/@material/radio",
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/selection-control/-/selection-control-0.27.0.tgz",
+  "_shasum": "4df7d56ed89dba9d041f016661ef819f7a1c1f06",
+  "_shrinkwrap": null,
+  "_spec": "@material/selection-control@^0.27.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/ripple": "^0.27.0"
+  },
+  "description": "The set of base classes for Material selection controls",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-qHXAmDlRwIgzc1bA9T4BK1JudkqdphaLggI0S9kBBfSpI2NFfE02F29ldTHl0WX9lvzcLKPswIcHkqbp5z0Oug==",
+    "shasum": "4df7d56ed89dba9d041f016661ef819f7a1c1f06",
+    "tarball": "https://registry.npmjs.org/@material/selection-control/-/selection-control-0.27.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "moog16",
+      "email": "mattgoo@gmail.com"
+    },
+    {
+      "name": "bonniez",
+      "email": "bonniez@google.com"
+    },
+    {
+      "name": "patrickrodee",
+      "email": "prodee@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    },
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    }
+  ],
+  "name": "@material/selection-control",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.27.0"
+}

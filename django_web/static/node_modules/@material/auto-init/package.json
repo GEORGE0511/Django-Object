@@ -1,0 +1,109 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/auto-init@^0.25.0",
+        "scope": "@material",
+        "escapedName": "@material%2fauto-init",
+        "name": "@material/auto-init",
+        "rawSpec": "^0.25.0",
+        "spec": ">=0.25.0 <0.26.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/auto-init@>=0.25.0 <0.26.0",
+  "_id": "@material/auto-init@0.25.0",
+  "_inCache": true,
+  "_location": "/@material/auto-init",
+  "_nodeVersion": "6.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/auto-init-0.25.0.tgz_1510603338821_0.6174155457410961"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/auto-init@^0.25.0",
+    "scope": "@material",
+    "escapedName": "@material%2fauto-init",
+    "name": "@material/auto-init",
+    "rawSpec": "^0.25.0",
+    "spec": ">=0.25.0 <0.26.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/auto-init/-/auto-init-0.25.0.tgz",
+  "_shasum": "4e1bd1e3d1ca05fd937130dd1f17f5ce2f4584a5",
+  "_shrinkwrap": null,
+  "_spec": "@material/auto-init@^0.25.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {},
+  "description": "Declarative, easy-to-use auto-initialization for Material Components for the web",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-5nZOslGcZUczKXfMPBze5fgAb3OAmoeGxm3h6x3QLZP7FMXgyRpofH6AGw5oDIiXmvSM8r2+sduwW9OfgMlTMA==",
+    "shasum": "4e1bd1e3d1ca05fd937130dd1f17f5ce2f4584a5",
+    "tarball": "https://registry.npmjs.org/@material/auto-init/-/auto-init-0.25.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "yeelan0319",
+      "email": "yiranmao@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    },
+    {
+      "name": "traviskaufman",
+      "email": "travis.kaufman@gmail.com"
+    }
+  ],
+  "name": "@material/auto-init",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.25.0"
+}

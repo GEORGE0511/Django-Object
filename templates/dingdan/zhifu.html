@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户用水管理系统</title>
+      <script src="//cdn.bootcss.com/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <link rel="stylesheet" href="/static/node_modules/mdi/css/materialdesignicons.min.css">
+  <script src="/static/lib/sweet-alert.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/lib/sweet-alert.css">
+  <script src="/static/lib/sweet-alert.js"></script>
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="/static/images/favicon.png" />
+</head>
+<body>
+        <script>
+            var name = {{ name }};
+            if (name != 1){
+                alert("支付成功，3秒后返回")
+            }
+
+            else
+            alert("账户余额不足，3秒后返回")
+        </script>
+       <script type="text/javascript">
+　　       function jumurl(){
+　　       window.location.href = '/dingdan/';
+　　   }
+　　    setTimeout(jumurl,3000);
+      </script>
+</body>
+</html>

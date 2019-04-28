@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>用户用水管理系统</title>
+        <script src="//cdn.bootcss.com/Chart.js/2.1.6/Chart.bundle.js"></script>
+        <link rel="stylesheet" href="/static/node_modules/mdi/css/materialdesignicons.min.css">
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script>
+        <script src="/static/lib/sweet-alert.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/lib/sweet-alert.css">
+        <script src="/static/lib/sweet-alert.js"></script>
+    </head>
+
+    <body>
+    <div class="row base-margin" id="query">
+        <ol class="breadcrumb">
+            <li>
+                <strong>
+                    <span style="color: #27a0d7">已经接单的列表</span>
+                </strong>
+            </li>
+        </ol>
+        <form class="form-inline" role="form" style="float: left; width: 100%" id="queryForm">
+            <div class="form-group">
+                <label for="orgCode">订单号：</label>
+                <input placeholder="" class="form-control layer-date" id="qiaozhi">
+            </div>
+            <div class="form-group">
+               <label >日期</label>
+                <select id="umonth">
+                     {% for year111 in data %}
+                       <option value="{{ year111}}">{{ year111 }}</option>
+                     {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary queryButton">查询</button>
+                <button type="button" class = "btn btn-primary queryButton" id = "george" onclick = "qz()">确认接单</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="container" style="width: 100%">
+        <table id="mytab" class="display table  table-hover" data-toggle="table"
+                data-url="{% url 'show_asset_in_table3' %}"
+                data-method="get"
+                data-pagination="true"
+                data-side-pagination="server"
+                data-page-list="[20, 50, 100]"
+                data-mobile-responsive="true"
+                data-show-refresh="true" data-show-columns="true"
+                data-show-toggle="true"
+                data-page-size=20
+                data-unique-id="asset_id"
+                data-striped="true">
+        </table>
+    </div>
+    <script>
+            $('#mytab').bootstrapTable({
+                responsive:"true",
+                searchOnEnterKey:"true",
+                refresh:"true",
+                toggle:"true",
+                unique:"asset_id",
+                striped: true, // 是否显示行间隔色
+                uniqueId: "ID",
+                pageSize: "20",
+                pagination: true, // 是否分页
+                sortable: true,
+                sortOrder: "asc",
+                queryParams: queryParams,
+                columns: [
+                    {
+                        field: 'asset_id',
+                        title: '订单号',
+                         sortable: true
+                    },
+                    {
+                        field: 'asset_name',
+                        title: '用户姓名'
+                    },
+                    {
+                        field: 'asset_riqi',
+                        title: '日期',
+                        sortable: true
+                    },
+                    {
+                        field: 'asset_water_c',
+                        title: '用水量'
+                    },
+                    {
+                        field: 'asset_water_id',
+                        title: '用水号'
+                    },
+                    {
+                        field: 'asset_water_flag',
+                        title: '用水类型'
+                    },
+                    {
+                        field: 'asset_add',
+                        title: '地址'
+                    },
+                ]
+            });
+            //操作栏的格式化
+            function queryParams(params) {
+                var temp = {
+                    qiao: $('#qiaozhi').val(),
+                    zhi: $('#umonth').val(),
+                    limit:params.limit,
+                    offset:params.offset, //页码
+                    pageindex : params.pageNumber,
+                    pageSize : params.pageSize
+                };
+                return temp;
+            }
+            </script>
+
+        <script type="text/javascript">
+             $(document).on('click', ".queryButton",function(){
+                  $('#mytab').bootstrapTable('refresh');
+            });
+            function initDate(){
+                var start = {
+                        elem: '#startDate',
+                        format: 'YYYY-MM',
+                        min: laydate.now(-7),
+                        max: laydate.now(),
+                        istime: true,
+                        istoday: false,
+                        choose: function (datas) {
+                            end.min = datas;
+                            end.start = datas
+                        }
+                    };
+                var end = {
+                    elem: '#endDate',
+                    format: 'YYYY-MM',
+                    min: laydate.now(-7),
+                    max: laydate.now(),
+                    istime: true,
+                    isclear: true,
+                    istoday: true,
+                    issuer: true,
+                    choose: function (datas) {
+                        start.max = datas;
+                    }
+                };
+                laydate(start);
+                latdate(end);
+                }
+        </script>
+    </body>
+</html>

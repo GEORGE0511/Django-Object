@@ -1,0 +1,132 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/ripple@^0.27.0",
+        "scope": "@material",
+        "escapedName": "@material%2fripple",
+        "name": "@material/ripple",
+        "rawSpec": "^0.27.0",
+        "spec": ">=0.27.0 <0.28.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/ripple@>=0.27.0 <0.28.0",
+  "_id": "@material/ripple@0.27.0",
+  "_inCache": true,
+  "_location": "/@material/ripple",
+  "_nodeVersion": "8.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ripple-0.27.0.tgz_1513020938469_0.4048900736961514"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/ripple@^0.27.0",
+    "scope": "@material",
+    "escapedName": "@material%2fripple",
+    "name": "@material/ripple",
+    "rawSpec": "^0.27.0",
+    "spec": ">=0.27.0 <0.28.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@material/button",
+    "/@material/checkbox",
+    "/@material/dialog",
+    "/@material/fab",
+    "/@material/icon-toggle",
+    "/@material/list",
+    "/@material/radio",
+    "/@material/select",
+    "/@material/selection-control",
+    "/@material/tabs",
+    "/@material/textfield",
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/ripple/-/ripple-0.27.0.tgz",
+  "_shasum": "174ef823434e51662dec7b4ba9f1d7bc7905d79b",
+  "_shrinkwrap": null,
+  "_spec": "@material/ripple@^0.27.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/base": "^0.24.0",
+    "@material/theme": "^0.27.0"
+  },
+  "description": "The Material Components for the web Ink Ripple effect for web element interactions",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-RhN6B7+r+m+YY+T0HjBGabs1DmCXkR9n/TJPKO4DvFJ7Cck03/sjMtdg7WSqIemP+9xDv6u8lhUMaW9d3Fu2Pw==",
+    "shasum": "174ef823434e51662dec7b4ba9f1d7bc7905d79b",
+    "tarball": "https://registry.npmjs.org/@material/ripple/-/ripple-0.27.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "keywords": [
+    "material components",
+    "material design",
+    "ripple"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    },
+    {
+      "name": "moog16",
+      "email": "mattgoo@gmail.com"
+    },
+    {
+      "name": "bonniez",
+      "email": "bonniez@google.com"
+    },
+    {
+      "name": "patrickrodee",
+      "email": "prodee@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    }
+  ],
+  "name": "@material/ripple",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.27.0"
+}

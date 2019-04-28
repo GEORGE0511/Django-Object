@@ -1,0 +1,126 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/slider@^0.27.0",
+        "scope": "@material",
+        "escapedName": "@material%2fslider",
+        "name": "@material/slider",
+        "rawSpec": "^0.27.0",
+        "spec": ">=0.27.0 <0.28.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/slider@>=0.27.0 <0.28.0",
+  "_id": "@material/slider@0.27.0",
+  "_inCache": true,
+  "_location": "/@material/slider",
+  "_nodeVersion": "8.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/slider-0.27.0.tgz_1513020939438_0.9980873877648264"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/slider@^0.27.0",
+    "scope": "@material",
+    "escapedName": "@material%2fslider",
+    "name": "@material/slider",
+    "rawSpec": "^0.27.0",
+    "spec": ">=0.27.0 <0.28.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/slider/-/slider-0.27.0.tgz",
+  "_shasum": "e624fb1b9d5d30f25e7d74ad836d9995a2efaabc",
+  "_shrinkwrap": null,
+  "_spec": "@material/slider@^0.27.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/animation": "^0.25.0",
+    "@material/base": "^0.24.0",
+    "@material/rtl": "^0.1.8",
+    "@material/theme": "^0.27.0"
+  },
+  "description": "The Material Components for the web slider component",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-RVZTEI+KHuDVSbs234hr0FHBYYtuCaZpI2YhDEUrkdD57iVKPqLNCROmCtoxvuselVanho3awAKUJZw6Jj6ovA==",
+    "shasum": "e624fb1b9d5d30f25e7d74ad836d9995a2efaabc",
+    "tarball": "https://registry.npmjs.org/@material/slider/-/slider-0.27.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "keywords": [
+    "material components",
+    "material design",
+    "slider"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "moog16",
+      "email": "mattgoo@gmail.com"
+    },
+    {
+      "name": "bonniez",
+      "email": "bonniez@google.com"
+    },
+    {
+      "name": "patrickrodee",
+      "email": "prodee@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    },
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    }
+  ],
+  "name": "@material/slider",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.27.0"
+}

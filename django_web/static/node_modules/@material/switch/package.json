@@ -1,0 +1,124 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/switch@^0.27.0",
+        "scope": "@material",
+        "escapedName": "@material%2fswitch",
+        "name": "@material/switch",
+        "rawSpec": "^0.27.0",
+        "spec": ">=0.27.0 <0.28.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/switch@>=0.27.0 <0.28.0",
+  "_id": "@material/switch@0.27.0",
+  "_inCache": true,
+  "_location": "/@material/switch",
+  "_nodeVersion": "8.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/switch-0.27.0.tgz_1513020940958_0.26144116115756333"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/switch@^0.27.0",
+    "scope": "@material",
+    "escapedName": "@material%2fswitch",
+    "name": "@material/switch",
+    "rawSpec": "^0.27.0",
+    "spec": ">=0.27.0 <0.28.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/switch/-/switch-0.27.0.tgz",
+  "_shasum": "e9390b706d2522f033e1541e3c4e78da91bd878b",
+  "_shrinkwrap": null,
+  "_spec": "@material/switch@^0.27.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/animation": "^0.25.0",
+    "@material/elevation": "^0.25.0",
+    "@material/theme": "^0.27.0"
+  },
+  "description": "The Material Components for the web switch component",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-3lpnimQtARUwT2jB3Zp1h1lViA4pKqktFYThQe8s+6BJRyW7BGWMLH3c+pJ7TuRXYmJ+xPGM7yuPG2N8Vo8G5A==",
+    "shasum": "e9390b706d2522f033e1541e3c4e78da91bd878b",
+    "tarball": "https://registry.npmjs.org/@material/switch/-/switch-0.27.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "keywords": [
+    "material components",
+    "material design",
+    "switch"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    },
+    {
+      "name": "moog16",
+      "email": "mattgoo@gmail.com"
+    },
+    {
+      "name": "bonniez",
+      "email": "bonniez@google.com"
+    },
+    {
+      "name": "patrickrodee",
+      "email": "prodee@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    }
+  ],
+  "name": "@material/switch",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.27.0"
+}

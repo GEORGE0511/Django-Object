@@ -1,0 +1,124 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/elevation@^0.25.0",
+        "scope": "@material",
+        "escapedName": "@material%2felevation",
+        "name": "@material/elevation",
+        "rawSpec": "^0.25.0",
+        "spec": ">=0.25.0 <0.26.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/elevation@>=0.25.0 <0.26.0",
+  "_id": "@material/elevation@0.25.0",
+  "_inCache": true,
+  "_location": "/@material/elevation",
+  "_nodeVersion": "6.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/elevation-0.25.0.tgz_1510603344334_0.6730950530618429"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/elevation@^0.25.0",
+    "scope": "@material",
+    "escapedName": "@material%2felevation",
+    "name": "@material/elevation",
+    "rawSpec": "^0.25.0",
+    "spec": ">=0.25.0 <0.26.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@material/button",
+    "/@material/card",
+    "/@material/dialog",
+    "/@material/drawer",
+    "/@material/fab",
+    "/@material/menu",
+    "/@material/switch",
+    "/@material/toolbar",
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/elevation/-/elevation-0.25.0.tgz",
+  "_shasum": "ab1b22cdc6d0c840e2c389e334c39466a8397c9b",
+  "_shrinkwrap": null,
+  "_spec": "@material/elevation@^0.25.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/animation": "^0.25.0",
+    "@material/theme": "^0.4.0"
+  },
+  "description": "Material Components for the web mixins + CSS Classes for Material Design elevation",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-3TU+Far+D7qo8UqghRIRPp2riXV457L2bULiv+KY9WglWR5eyX3l1BfApgEbza+ltZCVcbrtiTcRVpCI18zIqA==",
+    "shasum": "ab1b22cdc6d0c840e2c389e334c39466a8397c9b",
+    "tarball": "https://registry.npmjs.org/@material/elevation/-/elevation-0.25.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "keywords": [
+    "material components",
+    "material design",
+    "elevation"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "yeelan0319",
+      "email": "yiranmao@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    },
+    {
+      "name": "traviskaufman",
+      "email": "travis.kaufman@gmail.com"
+    }
+  ],
+  "name": "@material/elevation",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.25.0"
+}

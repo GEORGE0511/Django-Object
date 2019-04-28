@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>用户用水管理系统</title>
+  <!-- plugins:css -->
+  <script src="//cdn.bootcss.com/Chart.js/2.1.6/Chart.bundle.js"></script>
+  <link rel="stylesheet" href="/static/node_modules/mdi/css/materialdesignicons.min.css">
+  <script src="/static/lib/sweet-alert.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/lib/sweet-alert.css">
+  <script src="/static/lib/sweet-alert.js"></script>
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="/static/images/favicon.png" />
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+    <aside class="mdc-persistent-drawer mdc-persistent-drawer--open">
+      <nav class="mdc-persistent-drawer__drawer">
+        <div class="mdc-persistent-drawer__toolbar-spacer">
+          <a href="index.html" class="brand-logo">
+						<img src="/static/images/logo.svg" alt="logo">
+					</a>
+        </div>
+        <div class="mdc-list-group">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="{% url 'songshu' %}">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">desktop_mac</i>
+                个人主页
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="{% url 'jiedan' %}">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                接单
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="ui-sub-menu">
+              <a class="mdc-drawer-link" href="{% url 'jiedan2' %}">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+                显示已接的单
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item purchase-link">
+              <a href=" {% url 'e' %}" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense mdc-drawer-link" data-mdc-auto-init="MDCRipple">
+                  退出登录
+              </a>
+            </div>
+          </nav>
+        </div>
+      </nav>
+    </aside>
+    <!-- partial -->
+    <!-- partial:partials/_navbar.html -->
+    <header class="mdc-toolbar mdc-elevation--z4 mdc-toolbar--fixed">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <a href="#" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
+          <span class="mdc-toolbar__input">
+          </span>
+        </section>
+      </div>
+    </header>
+    <!-- partial -->
+    <div class="page-wrapper mdc-toolbar-fixed-adjust">
+      <main class="content-wrapper">
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8" style = "padding-left: 200px">
+              <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                  <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                    <div class="mdc--tile mdc--tile-danger rounded">
+                      <i class="mdi mdi-account-settings text-white icon-md"></i>
+                    </div>
+                    <div class="text-wrapper pl-1">
+                      <h3 class="mdc-typography--display1 font-weight-bold mb-1">{{ name }}</h3>
+                      <p class="font-weight-normal mb-0 mt-0">员工名</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                  <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                    <div class="mdc--tile mdc--tile-success rounded">
+                      <i class="mdi mdi-basket text-white icon-md"></i>
+                    </div>
+                    <div class="text-wrapper pl-1">
+                      <h3 class="mdc-typography--display1 font-weight-bold mb-1">{{ id }}</h3>
+                      <p class="font-weight-normal mb-0 mt-0">员工id</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                  <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                    <div class="mdc--tile mdc--tile-warning rounded">
+                      <i class="mdi mdi-ticket text-white icon-md"></i>
+                    </div>
+                    <div class="text-wrapper pl-1">
+                      <h3 class="mdc-typography--display1 font-weight-bold mb-1">{{ sex }}</h3>
+                      <p class="font-weight-normal mb-0 mt-0">性别</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                  <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                    <div class="mdc--tile mdc--tile-primary rounded">
+                      <i class="mdi mdi-account-star text-white icon-md"></i>
+                    </div>
+                    <div class="text-wrapper pl-1">
+                      <h3 class="mdc-typography--display1 font-weight-bold mb-1">{{ count }}</h3>
+                      <p class="font-weight-normal mb-0 mt-0">总接单数</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+              <div class="mdc-card px-5 py-4">
+                  <h1 class="mdc-card__title mdc-card__title--large">接单情况示意图</h1>
+                    <canvas id="myChart" style="padding-top: 50px"></canvas>
+              </div>
+            </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6" style="padding-left: 200px">
+                  <div class="mdc-card">
+                      <section class="mdc-card__primary bg-white">
+                    <div class="mdc-layout-grid">
+                        <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-10">
+                                 <label class="mdc-text-field w-100">
+                                      <h4 class="mdc-text-field__input">账户名:{{ name }}</h4>
+                                     <span class="mdc-text-field__label"></span>
+                                     <div class="mdc-text-field__bottom-line"></div>
+                                 </label>
+                        </div>
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-2">
+                               <button id ='george' class="mdc-button mdc-button--raised w-100" onclick="check('1')" data-mdc-auto-init="MDCRipple">
+                                   修改
+                               </button>
+                        </div>
+                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-10">
+                          <label class="mdc-text-field w-100">
+                              <h4  name="password" class="mdc-text-field__input" >性别:{{ sex }}</h4>
+                              <span class="mdc-text-field__label"></span>
+                              <div class="mdc-text-field__bottom-line"></div>
+                          </label>
+                        </div>
+                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-2">
+                               <button id ='george' class="mdc-button mdc-button--raised w-100" onclick="check('2')" data-mdc-auto-init="MDCRipple">
+                                  修改
+                               </button>
+                        </div>
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-10">
+                          <label class="mdc-text-field w-100">
+                              <h4  name="password" class="mdc-text-field__input" >电话:{{ phone }}</h4>
+                              <span class="mdc-text-field__label"></span>
+                              <div class="mdc-text-field__bottom-line"></div>
+                          </label>
+                        </div>
+                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-2">
+                               <button id ='george' class="mdc-button mdc-button--raised w-100" onclick="check('4')" data-mdc-auto-init="MDCRipple">
+                                  修改
+                               </button>
+                        </div>
+                        </div>
+                    </div>
+                      </section>
+                  </div>
+          </div>
+        </div>
+        </div>
+      </main>
+      <!-- partial:partials/_footer.html -->
+    </div>
+  </div>
+      <footer>
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+              <span class="text-muted">Copyright © 2018 <a class="text-green" href="#" target="_blank">用户用水管理系统</a>. All rights reserved.</span>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex justify-content-end">
+              <span class="mt-0 text-right">Hand-crafted &amp; made with <i class="mdi mdi-heart text-red"></i>Django <a href="" target="_blank" title="模板之家"></a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">用户用水管理系统</a> </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+  <!-- plugins:js -->
+  <script>
+        function check(id) {
+            if (id == '1')
+                var name=prompt("请输入您新的名字","");
+            if (id == '2')
+                var name=prompt("请输入您的性别","");
+            if (id == '4')
+                var name=prompt("请输入您的新手机","");
+            if (name){
+            swal(
+                    {
+                        title: "您确定要修改这条数据吗",
+                        text: "修改后将无法恢复，请谨慎操作！",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "确定修改！",
+                        cancelButtonText: "取消",
+                        closeOnConfirm: false,
+                        closeOnCancel: false
+                    }, function (isConfirm) {
+                        if (isConfirm) {
+                            var post_data = JSON.stringify({
+                             "name": name, "id":id
+                            });
+                             $.ajax({
+                            url: {% url 'd' %},
+                                type: "POST", contentType: 'application/json',
+                                data: post_data,
+                                success: function (data) {
+                                    data = JSON.parse(data);
+                                    if (data["status"] == 1) {
+                                            swal({
+                                                title: "修改成功！",
+                                                text: "您已经修改了这条数据。",
+                                                type: "success"
+                                            }, function () {
+                                                window.location = "/songshui/"
+                                            })
+                                        }
+                                    else {
+                                        swal({
+                                        text: "操作失败！",
+                                         type: "error"
+                            })
+                                    }
+                                }
+                             })
+                        } else {
+                            swal({
+                                title: "已取消",
+                                text: "您取消了修改操作！",
+                                type: "error"
+                            })
+                        }
+                    })
+            }
+            else {
+             swal({
+                                title: "已取消",
+                                text: "您取消了修改操作！",
+                                type: "error"
+                            })
+        }
+        }
+
+    </script>
+  <script type="text/javascript">
+  // 设置参数
+  var datas = {
+    labels: ["一月", "二月", "三月", "四月", "五月","六月","七月","八月","九月","十月","十一月","十二月"],
+    datasets: [
+        {
+            data: {{ qiaozhi|safe }},
+            fill: false,
+            pointBorderColor:"#C064A7",
+            pointBackgroundColor:"#36A2EB",
+            borderColor:"#C064A7",
+        }
+        ]
+};
+    // Get the context of the canvas element we want to select
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myBarChart = new Chart(ctx, {
+                                            type: 'line',
+                                            data: datas,
+                                            // options: options
+                                    });
+</script>
+  <script src="/static/node_modules/material-components-web/dist/material-components-web.min.js"></script>
+  <script src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="/static/node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/node_modules/progressbar.js/dist/progressbar.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="/static/js/misc.js"></script>
+  <script src="/static/js/material.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="/static/js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

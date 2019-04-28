@@ -1,0 +1,123 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/list@^0.27.0",
+        "scope": "@material",
+        "escapedName": "@material%2flist",
+        "name": "@material/list",
+        "rawSpec": "^0.27.0",
+        "spec": ">=0.27.0 <0.28.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/list@>=0.27.0 <0.28.0",
+  "_id": "@material/list@0.27.0",
+  "_inCache": true,
+  "_location": "/@material/list",
+  "_nodeVersion": "8.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/list-0.27.0.tgz_1513020935083_0.3882305009756237"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/list@^0.27.0",
+    "scope": "@material",
+    "escapedName": "@material%2flist",
+    "name": "@material/list",
+    "rawSpec": "^0.27.0",
+    "spec": ">=0.27.0 <0.28.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@material/select",
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/list/-/list-0.27.0.tgz",
+  "_shasum": "842a6c945b65ac6f5e4f1dea55b10f015ac8b15c",
+  "_shrinkwrap": null,
+  "_spec": "@material/list@^0.27.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/ripple": "^0.27.0",
+    "@material/rtl": "^0.1.8",
+    "@material/theme": "^0.27.0",
+    "@material/typography": "^0.3.0"
+  },
+  "description": "The Material Components for the web list component",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-F/eTyB1mFR/MzkgkeIeEC7tNxKLh3+zn20KX7PGiRY1P+j30jzk3M7O7Zp+5OS4SEOBFUZLbff9qWpxUvUvolg==",
+    "shasum": "842a6c945b65ac6f5e4f1dea55b10f015ac8b15c",
+    "tarball": "https://registry.npmjs.org/@material/list/-/list-0.27.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "keywords": [
+    "material components",
+    "material design",
+    "list"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    },
+    {
+      "name": "moog16",
+      "email": "mattgoo@gmail.com"
+    },
+    {
+      "name": "bonniez",
+      "email": "bonniez@google.com"
+    },
+    {
+      "name": "patrickrodee",
+      "email": "prodee@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    }
+  ],
+  "name": "@material/list",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.27.0"
+}

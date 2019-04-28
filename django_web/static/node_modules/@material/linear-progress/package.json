@@ -1,0 +1,124 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/linear-progress@^0.27.0",
+        "scope": "@material",
+        "escapedName": "@material%2flinear-progress",
+        "name": "@material/linear-progress",
+        "rawSpec": "^0.27.0",
+        "spec": ">=0.27.0 <0.28.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/linear-progress@>=0.27.0 <0.28.0",
+  "_id": "@material/linear-progress@0.27.0",
+  "_inCache": true,
+  "_location": "/@material/linear-progress",
+  "_nodeVersion": "8.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/linear-progress-0.27.0.tgz_1513020935408_0.6959396582096815"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/linear-progress@^0.27.0",
+    "scope": "@material",
+    "escapedName": "@material%2flinear-progress",
+    "name": "@material/linear-progress",
+    "rawSpec": "^0.27.0",
+    "spec": ">=0.27.0 <0.28.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/linear-progress/-/linear-progress-0.27.0.tgz",
+  "_shasum": "0607dfb9b579a11e0fe5ea940af3784145f45c40",
+  "_shrinkwrap": null,
+  "_spec": "@material/linear-progress@^0.27.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/animation": "^0.25.0",
+    "@material/base": "^0.24.0",
+    "@material/theme": "^0.27.0"
+  },
+  "description": "The Material Components for the web linear progress indicator component",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-XitcSts6MU0pDnkg54rovFlHgfNJuhhWM0kgEtMIicCurEGbS0Ptg5H+B5DVejBimeZQBZtnl53y0+Q1b/TSMA==",
+    "shasum": "0607dfb9b579a11e0fe5ea940af3784145f45c40",
+    "tarball": "https://registry.npmjs.org/@material/linear-progress/-/linear-progress-0.27.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "keywords": [
+    "material components",
+    "material design",
+    "linear progress"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "moog16",
+      "email": "mattgoo@gmail.com"
+    },
+    {
+      "name": "bonniez",
+      "email": "bonniez@google.com"
+    },
+    {
+      "name": "patrickrodee",
+      "email": "prodee@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    },
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    }
+  ],
+  "name": "@material/linear-progress",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.27.0"
+}

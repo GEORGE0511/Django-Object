@@ -1,0 +1,125 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/menu@^0.27.0",
+        "scope": "@material",
+        "escapedName": "@material%2fmenu",
+        "name": "@material/menu",
+        "rawSpec": "^0.27.0",
+        "spec": ">=0.27.0 <0.28.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/menu@>=0.27.0 <0.28.0",
+  "_id": "@material/menu@0.27.0",
+  "_inCache": true,
+  "_location": "/@material/menu",
+  "_nodeVersion": "8.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/menu-0.27.0.tgz_1513020937005_0.16233694879338145"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/menu@^0.27.0",
+    "scope": "@material",
+    "escapedName": "@material%2fmenu",
+    "name": "@material/menu",
+    "rawSpec": "^0.27.0",
+    "spec": ">=0.27.0 <0.28.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@material/select",
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/menu/-/menu-0.27.0.tgz",
+  "_shasum": "56d1abc130013aacc33b40c1d4d2ba8dd0a5ae32",
+  "_shrinkwrap": null,
+  "_spec": "@material/menu@^0.27.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/animation": "^0.25.0",
+    "@material/base": "^0.24.0",
+    "@material/elevation": "^0.25.0",
+    "@material/theme": "^0.27.0",
+    "@material/typography": "^0.3.0"
+  },
+  "description": "The Material Components for the web menu component",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-JV485C66qIjJ3O7Fleox8vI3lWyKoF8gTDNaMv1fnND5XXYqlSIBsdE5QP6/8HQcEZTTozfsv7N6VZC/F5pwEw==",
+    "shasum": "56d1abc130013aacc33b40c1d4d2ba8dd0a5ae32",
+    "tarball": "https://registry.npmjs.org/@material/menu/-/menu-0.27.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "keywords": [
+    "material components",
+    "material design",
+    "menu"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    },
+    {
+      "name": "moog16",
+      "email": "mattgoo@gmail.com"
+    },
+    {
+      "name": "bonniez",
+      "email": "bonniez@google.com"
+    },
+    {
+      "name": "patrickrodee",
+      "email": "prodee@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    }
+  ],
+  "name": "@material/menu",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.27.0"
+}

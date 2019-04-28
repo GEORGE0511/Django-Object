@@ -1,0 +1,123 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/icon-toggle@^0.27.0",
+        "scope": "@material",
+        "escapedName": "@material%2ficon-toggle",
+        "name": "@material/icon-toggle",
+        "rawSpec": "^0.27.0",
+        "spec": ">=0.27.0 <0.28.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/icon-toggle@>=0.27.0 <0.28.0",
+  "_id": "@material/icon-toggle@0.27.0",
+  "_inCache": true,
+  "_location": "/@material/icon-toggle",
+  "_nodeVersion": "8.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/icon-toggle-0.27.0.tgz_1513020934841_0.7169381282292306"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/icon-toggle@^0.27.0",
+    "scope": "@material",
+    "escapedName": "@material%2ficon-toggle",
+    "name": "@material/icon-toggle",
+    "rawSpec": "^0.27.0",
+    "spec": ">=0.27.0 <0.28.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/icon-toggle/-/icon-toggle-0.27.0.tgz",
+  "_shasum": "ac024cf4bca99947d74a1ff5bc761348f3c94981",
+  "_shrinkwrap": null,
+  "_spec": "@material/icon-toggle@^0.27.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/animation": "^0.25.0",
+    "@material/base": "^0.24.0",
+    "@material/ripple": "^0.27.0",
+    "@material/theme": "^0.27.0"
+  },
+  "description": "The Material Components for the web icon toggle component",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-TMNyyjrLDs9d73Nvtq4U7guAFO0Lw1gmwmtIFemMgmx0Zz4qMztGamIe/G72Ue3OSPG4RNGOgQYRgVr5zh3OPg==",
+    "shasum": "ac024cf4bca99947d74a1ff5bc761348f3c94981",
+    "tarball": "https://registry.npmjs.org/@material/icon-toggle/-/icon-toggle-0.27.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "keywords": [
+    "material components",
+    "material design",
+    "icon toggle"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    },
+    {
+      "name": "moog16",
+      "email": "mattgoo@gmail.com"
+    },
+    {
+      "name": "bonniez",
+      "email": "bonniez@google.com"
+    },
+    {
+      "name": "patrickrodee",
+      "email": "prodee@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    }
+  ],
+  "name": "@material/icon-toggle",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.27.0"
+}

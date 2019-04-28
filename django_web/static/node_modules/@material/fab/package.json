@@ -1,0 +1,123 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@material/fab@^0.27.0",
+        "scope": "@material",
+        "escapedName": "@material%2ffab",
+        "name": "@material/fab",
+        "rawSpec": "^0.27.0",
+        "spec": ">=0.27.0 <0.28.0",
+        "type": "range"
+      },
+      "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web"
+    ]
+  ],
+  "_from": "@material/fab@>=0.27.0 <0.28.0",
+  "_id": "@material/fab@0.27.0",
+  "_inCache": true,
+  "_location": "/@material/fab",
+  "_nodeVersion": "8.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/fab-0.27.0.tgz_1513020931801_0.27590910415165126"
+  },
+  "_npmUser": {
+    "name": "amsheehan",
+    "email": "alex.m.sheehan@gmail.com"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@material/fab@^0.27.0",
+    "scope": "@material",
+    "escapedName": "@material%2ffab",
+    "name": "@material/fab",
+    "rawSpec": "^0.27.0",
+    "spec": ">=0.27.0 <0.28.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/material-components-web"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material/fab/-/fab-0.27.0.tgz",
+  "_shasum": "2ee4b47d4248731fe6065fcbb6423c36eb1c5fb3",
+  "_shrinkwrap": null,
+  "_spec": "@material/fab@^0.27.0",
+  "_where": "C:\\Users\\Sadiq\\Documents\\GitHub\\Material-Admin\\node_modules\\material-components-web",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "dependencies": {
+    "@material/animation": "^0.25.0",
+    "@material/elevation": "^0.25.0",
+    "@material/ripple": "^0.27.0",
+    "@material/theme": "^0.27.0"
+  },
+  "description": "The Material Components for the web floating action button component",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-7UTBa4M1YIq6wkseQ7kjx7FR3bxnJoV8V+wZXet/GZBlG3KhYTXIxazwqMGU2WnuwDXvquq2rhNxG9ZXj028jQ==",
+    "shasum": "2ee4b47d4248731fe6065fcbb6423c36eb1c5fb3",
+    "tarball": "https://registry.npmjs.org/@material/fab/-/fab-0.27.0.tgz"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "keywords": [
+    "material components",
+    "material design",
+    "floating action button",
+    "fab"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "material-admin",
+      "email": "lynnjepsen+npm@google.com"
+    },
+    {
+      "name": "moog16",
+      "email": "mattgoo@gmail.com"
+    },
+    {
+      "name": "bonniez",
+      "email": "bonniez@google.com"
+    },
+    {
+      "name": "patrickrodee",
+      "email": "prodee@google.com"
+    },
+    {
+      "name": "aprigogin",
+      "email": "andrey.prigogin@gmail.com"
+    },
+    {
+      "name": "kfranqueiro",
+      "email": "kenneth.franqueiro@gmail.com"
+    },
+    {
+      "name": "acdvorak",
+      "email": "acdvorak@gmail.com"
+    },
+    {
+      "name": "lynnjepsen",
+      "email": "lynnjepsen@google.com"
+    },
+    {
+      "name": "bwobrien",
+      "email": "obrien.test@gmail.com"
+    },
+    {
+      "name": "amsheehan",
+      "email": "alex.m.sheehan@gmail.com"
+    }
+  ],
+  "name": "@material/fab",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "version": "0.27.0"
+}

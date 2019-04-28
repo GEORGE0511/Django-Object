@@ -1,0 +1,727 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>用户用水管理系统</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- Custom Theme files -->
+<link href="/static/dingdan/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/static/dingdan/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/static/dingdan/css/fasthover.css" rel="stylesheet" type="text/css" media="all"/>  <!-- font-awesome icons -->
+<link href="/static/dingdan/css/font-awesome.css" rel="stylesheet">
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="/static/dingdan/js/jquery.min.js"></script>
+<!-- //js -->
+<!-- web fonts -->
+<!-- //web fonts -->
+<!-- for bootstrap working -->
+<script type="text/javascript" src="/static/dingdan/js/bootstrap-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="/static/node_modules/mdi/css/materialdesignicons.min.css">
+  <script src="/static/lib/sweet-alert.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/lib/sweet-alert.css">
+  <script src="/static/lib/sweet-alert.js"></script>
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="/static/images/favicon.png" />
+<!-- //for bootstrap working -->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<!-- //end-smooth-scrolling -->
+</head>
+<body>
+<aside class="mdc-persistent-drawer mdc-persistent-drawer--open">
+      <nav class="mdc-persistent-drawer__drawer">
+        <div class="mdc-persistent-drawer__toolbar-spacer">
+          <a href="index.html" class="brand-logo">
+                        <img src="/static/images/logo.svg" alt="logo">
+                    </a>
+        </div>
+        <div class="mdc-list-group">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="{% url 'index' %}">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">desktop_mac</i>
+                个人主页
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="{% url 'dingdan' %}">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                订水
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="ui-sub-menu">
+              <a class="mdc-drawer-link" href="{% url 'table' %}">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+                查询系统
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item purchase-link">
+              <a href=" {% url 'e' %}" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense mdc-drawer-link" data-mdc-auto-init="MDCRipple">
+                  退出登录
+              </a>
+            </div>
+          </nav>
+        </div>
+      </nav>
+    </aside>
+    <!-- partial -->
+    <!-- partial:partials/_navbar.html -->
+    <!-- header modal -->
+<header class="mdc-toolbar mdc-elevation--z4 mdc-toolbar--fixed">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <a href="#" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
+        </section>
+      </div>
+</header>
+    <div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;</button>
+                    <h4 class="modal-title" id="myModalLabel">当前账户</h4>
+                    <h4 class="modal-title" id="myModalLabel">用户名：{{ name }}</h4>
+                    <h4 class="modal-title" id="myModalLabel">用户ID：{{ id }}</h4>
+                </div>
+                </div>
+            </div>
+        </div>
+    <!-- header modal -->
+    <!-- header -->
+    <div class="header" id="home1" style="padding-top: 100px;">
+        <div class="container">
+            <div class="w3l_login">
+                <a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+            </div>
+            <div class="w3l_logo">
+                <h1><a href="index.html">最好的订水平台<span>选您所选</span></a></h1>
+            </div>
+            <div class="cart cart box_1">
+                <form action="#" method="post" class="last">
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- navigation -->
+    <!-- //navigation -->
+    <!-- banner -->
+    </br>
+    <!-- breadcrumbs -->
+    <!-- //breadcrumbs -->
+    <!-- mobiles -->
+<div class="w3l_related_products">
+        <div class="container">
+            <h3>最新产品</h3>
+        </div>
+</div>
+    <div class="mobiles" style="padding-left: 300px" >
+        <div class="container" style="padding-top: 0px">
+            <div class="w3ls_mobiles_grids">
+                <div class="col-md-8 w3ls_mobiles_grid_right" >
+                    <div class="clearfix"> </div>
+                    <div class="w3ls_mobiles_grid_right_grid3">
+                        <div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
+                            <div class="agile_ecommerce_tab_left mobiles_grid">
+                                <div class="hs-wrapper hs-wrapper2">
+                                    <img src="/static/dingdan/images/nongfushanquan1.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/nongfushanquan2.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/nongfushanquan3.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/nongfushanquan2.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/nongfushanquan1.jpg" alt=" " class="img-responsive" />
+                                    <div class="w3_hs_bottom w3_hs_bottom_sub1">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h5><a href="single.html">{{ list1 }}</a></h5>
+                                <div class="simpleCart_shelfItem">
+                                    <p><span>¥15</span> <i class="item_price">¥{{ list11 }}</i></p>
+                                    <form action="#" method="post">
+                                        <input type="hidden" name="cmd" value="_cart" />
+                                        <input type="hidden" name="add" value="1" />
+                                        <input type="hidden" name="w3ls_item" value={{ list1 }} />
+                                        <input type="hidden" name="amount" value={{ list11 }}/>
+                                        <button type="submit" class="w3ls-cart">加入购物车</button>
+                                    </form>
+                                </div>
+                                <div class="mobiles_grid_pos">
+                                    <h6>新品</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
+                            <div class="agile_ecommerce_tab_left mobiles_grid">
+                                <div class="hs-wrapper hs-wrapper2">
+                                    <img src="/static/dingdan/images/yibao1.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/yibao2.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/yibao1.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/yibao2.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/yibao1.jpg" alt=" " class="img-responsive" />
+                                    <div class="w3_hs_bottom w3_hs_bottom_sub1">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-toggle="modal" data-target="#myModal7"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h5><a href="single.html">{{ list2 }}</a></h5>
+                                <div class="simpleCart_shelfItem">
+                                    <p><span>¥30</span> <i class="item_price">¥{{ list12 }}</i></p>
+                                    <form action="#" method="post">
+                                        <input type="hidden" name="cmd" value="_cart" />
+                                        <input type="hidden" name="add" value="1" />
+                                        <input type="hidden" name="w3ls_item" value={{ list2 }} />
+                                        <input type="hidden" name="amount" value={{ list12 }}/>
+                                        <button type="submit" class="w3ls-cart">加入购物车</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
+                            <div class="agile_ecommerce_tab_left mobiles_grid">
+                                <div class="hs-wrapper hs-wrapper2">
+                                    <img src="/static/dingdan/images/lebaishi1.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/lebaishi2.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/lebaishi1.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/lebaishi2.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/lebaishi1.jpg" alt=" " class="img-responsive" />
+                                    <div class="w3_hs_bottom w3_hs_bottom_sub1">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-toggle="modal" data-target="#myModal5"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h5><a href="single.html">{{ list3 }}</a></h5>
+                                <div class="simpleCart_shelfItem">
+                                    <p><span>¥20</span> <i class="item_price">¥{{ list13 }}</i></p>
+                                    <form action="#" method="post">
+                                        <input type="hidden" name="cmd" value="_cart" />
+                                        <input type="hidden" name="add" value="1" />
+                                        <input type="hidden" name="w3ls_item" value={{ list3 }} />
+                                        <input type="hidden" name="amount" value={{ list13 }}/>
+                                        <button type="submit" class="w3ls-cart">加入购物车</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="w3ls_mobiles_grid_right_grid3">
+                        <div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
+                            <div class="agile_ecommerce_tab_left mobiles_grid">
+                                <div class="hs-wrapper hs-wrapper2">
+                                    <img src="/static/dingdan/images/jingtian1.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/jingtian2.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/jingtian1.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/jingtian2.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/jingtian1.jpg" alt=" " class="img-responsive" />
+                                    <div class="w3_hs_bottom w3_hs_bottom_sub1">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-toggle="modal" data-target="#myModal9"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h5><a href="single.html">{{ list4 }}</a></h5>
+                                <div class="simpleCart_shelfItem">
+                                    <p><span>¥32</span> <i class="item_price">¥{{ list14 }}</i></p>
+                                    <form action="#" method="post">
+                                        <input type="hidden" name="cmd" value="_cart" />
+                                        <input type="hidden" name="add" value="1" />
+                                        <input type="hidden" name="w3ls_item" value={{ list4 }} />
+                                        <input type="hidden" name="amount" value={{ list14 }}/>
+                                        <button type="submit" class="w3ls-cart">加入购物车</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
+                            <div class="agile_ecommerce_tab_left mobiles_grid">
+                                <div class="hs-wrapper hs-wrapper2">
+                                    <img src="/static/dingdan/images/wahaha1.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/wahaha3.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/wahaha1.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/wahaha3.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/wahaha1.jpg" alt=" " class="img-responsive" />
+                                    <div class="w3_hs_bottom w3_hs_bottom_sub1">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h5><a href="single.html">{{ list5 }}</a></h5>
+                                <div class="simpleCart_shelfItem">
+                                    <p><span>¥40</span> <i class="item_price">¥{{ list15 }}</i></p>
+                                    <form action="#" method="post">
+                                        <input type="hidden" name="cmd" value="_cart" />
+                                        <input type="hidden" name="add" value="1" />
+                                        <input type="hidden" name="w3ls_item" value={{ list5 }} />
+                                        <input type="hidden" name="amount" value={{ list15 }}/>
+                                        <button type="submit" class="w3ls-cart">加入购物车</button>
+                                    </form>
+                                </div>
+                                <div class="mobiles_grid_pos">
+                                    <h6>新品</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
+                            <div class="agile_ecommerce_tab_left mobiles_grid">
+                                <div class="hs-wrapper hs-wrapper2">
+                                    <img src="/static/dingdan/images/output.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/binglu2.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/output.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/binglu2.jpg" alt=" " class="img-responsive" />
+                                    <img src="/static/dingdan/images/output.jpg" alt=" " class="img-responsive" />
+                                    <div class="w3_hs_bottom w3_hs_bottom_sub1">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h5><a href="single.html">{{ list6 }}</a></h5>
+                                <div class="simpleCart_shelfItem">
+                                    <p><span>¥30</span> <i class="item_price">¥{{ list16 }}</i></p>
+                                    <form action="#" method="post">
+                                        <input type="hidden" name="cmd" value="_cart" />
+                                        <input type="hidden" name="add" value="1" />
+                                        <input type="hidden" name="w3ls_item" value={{ list6 }} />
+                                        <input type="hidden" name="amount" value={{ list16 }}/>
+                                        <button type="submit" class="w3ls-cart">加入购物车</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal video-modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModal9">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <section>
+                    <div class="modal-body">
+                        <div class="col-md-5 modal_body_left">
+                            <img src="images/27.jpg" alt=" " class="img-responsive" />
+                        </div>
+                        <div class="col-md-7 modal_body_right">
+                            <h4>{{ list4 }}</h4>
+                            <p>水中贵族——景田百岁山矿泉水</p>
+                            <div class="rating">
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="modal_body_right_cart simpleCart_shelfItem">
+                                <p><span>¥32</span> <i class="item_price">¥{{ list14 }}</i></p>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value={{ list4 }} />
+                                    <input type="hidden" name="amount" value={{ list14 }}/>
+                                    <button type="submit" class="w3ls-cart">加入购物车</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="modal video-modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModal8">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <section>
+                    <div class="modal-body">
+                        <div class="col-md-5 modal_body_left">
+                            <img src="/static/dingdan/images/nongfushanquan1.jpg" alt=" " class="img-responsive" />
+                        </div>
+                        <div class="col-md-7 modal_body_right">
+                            <h4>{{ list1 }}</h4>
+                            <p>“我们只做大自然搬运工”——二十年如一日，农夫山泉坚守"从不使用城市自来水"的理念，始终坚持水源地建厂，水源地生产，确保每一瓶农夫山泉的天然健康品质。
+                            好水源造好水。农夫山泉坚持水源地建厂，水源地生产。每一瓶农夫山泉都清晰标注水源地，确保消费者知情权。农夫山泉坚持在远离都市的深山密林中建立生产基地，
+                                全部生产过程在水源地完成。您喝的每一瓶农夫山泉，都经过了漫长的运输线路，从大自然远道而来。</p>
+                            <div class="rating">
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="modal_body_right_cart simpleCart_shelfItem">
+                                <p><span>¥15</span> <i class="item_price">¥{{ list11 }}</i></p>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart">
+                                    <input type="hidden" name="add" value="1">
+                                    <input type="hidden" name="w3ls_item" value={{ list1 }}>
+                                    <input type="hidden" name="amount" value={{ list11 }}>
+                                    <button type="submit" class="w3ls-cart">加入购物车</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="modal video-modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModal7">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <section>
+                    <div class="modal-body">
+                        <div class="col-md-5 modal_body_left">
+                            <img src="/static/dingdan/images/yibao1.jpg" alt=" " class="img-responsive" />
+                        </div>
+                        <div class="col-md-7 modal_body_right">
+                            <h4>{{ list2 }}</h4>
+                            <p>总有一些人
+                                默默坚守职责
+                                    点点滴滴
+                                        始终如一
+                                分享让你我更亲近
+                                你是我的怡宝，“心纯净，行至美”</p>
+                            <div class="rating">
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="modal_body_right_cart simpleCart_shelfItem">
+                                <p><span>¥30</span> <i class="item_price">¥{{ list12 }}</i></p>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value={{ list2 }}/>
+                                    <input type="hidden" name="amount" value={{ list12 }}/>
+                                    <button type="submit" class="w3ls-cart">加入购物车</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="modal video-modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModal6">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <section>
+                    <div class="modal-body">
+                        <div class="col-md-5 modal_body_left">
+                            <img src="/static/dingdan/images/wahaha1.jpg" alt=" " class="img-responsive" />
+                        </div>
+                        <div class="col-md-7 modal_body_right">
+                            <h4>{{ list5 }}</h4>
+                            <p>娃哈哈纯净水，甘甜可口，欢迎选购</p>
+                            <div class="rating">
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="modal_body_right_cart simpleCart_shelfItem">
+                                <p><span>¥40</span> <i class="item_price">¥{{ list15 }}</i></p>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart">
+                                    <input type="hidden" name="add" value="1">
+                                    <input type="hidden" name="w3ls_item" value={{ list5 }}>
+                                    <input type="hidden" name="amount" value={{ list15 }}>
+                                    <button type="submit" class="w3ls-cart">加入购物车</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="modal video-modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModal5">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <section>
+                    <div class="modal-body">
+                        <div class="col-md-5 modal_body_left">
+                            <img src="/static/dingdan/images/lebaishi1.jpg" alt=" " class="img-responsive">
+                        </div>
+                        <div class="col-md-7 modal_body_right">
+                            <h4>{{ list3 }}</h4>
+                            <p>健康新生活,从“乐百氏”开始——乐百氏</p>
+                            <div class="rating">
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive">
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive">
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive">
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive">
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star.png" alt=" " class="img-responsive">
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="modal_body_right_cart simpleCart_shelfItem">
+                                <p><span>¥20</span> <i class="item_price">¥{{ list13 }}</i></p>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart">
+                                    <input type="hidden" name="add" value="1">
+                                    <input type="hidden" name="w3ls_item" value={{ list3 }}>
+                                    <input type="hidden" name="amount" value={{ list13 }}>
+                                    <button type="submit" class="w3ls-cart">加入购物车</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="modal video-modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModal4">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <section>
+                    <div class="modal-body">
+                        <div class="col-md-5 modal_body_left">
+                            <img src="/static/dingdan/images/output.jpg" alt=" " class="img-responsive" />
+                        </div>
+                        <div class="col-md-7 modal_body_right">
+                            <h4>{{ list6 }}</h4>
+                            <p>冰露是可口可乐公司旗下全新矿物质饮用水品牌，瓶身采用独特流线型包装，简约时尚，动感十足。可口可乐公司将专门策划与众多体育明星发起“奥运点滴，群星感言”活动，众多奥运明星代言人的奥运感言将登陆冰露产品瓶身，畅谈奥运，感恩点滴，与人们共勉。
+                                姚明的感言是：“赢得比赛和保护水资源一样，都需要坚持不懈的努力！”</p>
+                            <div class="rating">
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star-.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="rating-left">
+                                    <img src="/static/dingdan/images/star.png" alt=" " class="img-responsive" />
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="modal_body_right_cart simpleCart_shelfItem">
+                                <p><span>¥30</span> <i class="item_price">¥{{ list16 }}</i></p>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value={{ list6 }} />
+                                    <input type="hidden" name="amount" value={{ list16 }}/>
+                                    <button type="submit" class="w3ls-cart">加入购物车</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="w3l_related_products">
+        <div class="container">
+                <script type="text/javascript">
+                    $(window).load(function() {
+                        $("#flexiselDemo2").flexisel({
+                            visibleItems:4,
+                            animationSpeed: 1000,
+                            autoPlay: true,
+                            autoPlaySpeed: 3000,
+                            pauseOnHover: true,
+                            enableResponsiveBreakpoints: true,
+                            responsiveBreakpoints: {
+                                portrait: {
+                                    changePoint:568,
+                                    visibleItems: 1
+                                },
+                                landscape: {
+                                    changePoint:667,
+                                    visibleItems:2
+                                },
+                                tablet: {
+                                    changePoint:768,
+                                    visibleItems: 3
+                                }
+                            }
+                        });
+
+                    });
+                </script>
+                <script type="text/javascript" src="/static/dingdan/js/jquery.flexisel.js"></script>
+        </div>
+    </div>
+    <!-- //Related Products -->
+    <!-- newsletter -->
+    <div class="newsletter">
+        <div class="container">
+            <div class="col-md-6 w3agile_newsletter_left">
+                <h3>如有任何问题</h3>
+                <p>请把您的邮箱留下，我们和您取得联系</p>
+            </div>
+            <div class="col-md-6 w3agile_newsletter_right">
+                <form action="#" method="post">
+                    <input type="email" name="Email" placeholder="Email" required="">
+                    <input type="submit" value="" />
+                </form>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //newsletter -->
+    <!-- footer -->
+        <div class="footer-copy">
+            <div class="container">
+                <p>Copyright &copy; 2018.Company name All rights reserved.<a href="" target="_blank" title="用户用水管理系统">用户用水管理系统</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">用户用水管理系统</a></p>
+            </div>
+        </div>
+    <!-- //footer -->
+    <!-- cart-js -->
+    <script src="/static/dingdan/js/minicart.js"></script>
+    <script>
+        w3ls.render();
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+            var items, len, i;
+            if (this.subtotal() > 0) {
+                items = this.items();
+                for (i = 0, len = items.length; i < len; i++) {
+                }
+            }
+        });
+    </script>
+    <!-- //cart-js -->
+<script src="/static/node_modules/material-components-web/dist/material-components-web.min.js"></script>
+  <script src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="/static/node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/node_modules/progressbar.js/dist/progressbar.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="/static/js/misc.js"></script>
+  <script src="/static/js/material.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
